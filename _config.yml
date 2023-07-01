@@ -1,16 +1,16 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+title:              GANmapper-Project
+email:              jonathan.hecht@hcu-hamburg.de
+description:        A Small Research about the Creation of Building Footprints
+author:             Jonathan Hecht
 baseurl:            "/GANmapper-Project"
 url:                "https://jp-hecht.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+# twitter_username:   SBootstrap
+github_username:    jp-hecht
+# facebook_username:  StartBootstrap
+# instagram_username:  
+# linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
