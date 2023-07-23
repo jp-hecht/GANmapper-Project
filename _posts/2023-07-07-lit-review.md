@@ -38,7 +38,9 @@ On the other side, there is the generator’s network. First we give him some ra
 <span class='caption text-muted'>Figure 3: Model architecture of  conditional GAN (Data scientist, Qu'est-ce qu'un Conditional GAN ?, janvier 2022)</span>
 
 With conditional GAN it is possible to create a model such as image-super-resolution which is able to conceive the same image as in the data input but with a better quality or the text-to-image resolution, a model able to design a picture based on what the speaker describes in text as nightcafé, mid journey, etc.
-The one we will focus on in this study is the image-to-image translation which is usually the transformation of one picture to another with more features or different designs as they are used in the medical field to generate sample images. See you in the next chapter !
+The one we will focus on in this study is the image-to-image translation which is usually the transformation of one picture to another with more features or different designs as they are used in the medical field to generate sample images. 
+
+See you in the next chapter !
 
 ---
 ##### References : 
