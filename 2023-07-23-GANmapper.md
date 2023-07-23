@@ -27,24 +27,24 @@ Here, they are looking for the best pair input-output for the task. They begin t
 * Land use map : colored-coded land use parcels which gives the gross floor area ratio (GFA). 
 * Black and White street networks
 * Colored Road Hierarchy Diagrams street networks
-<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu6.png' alt='The GANmapper model architecture'>
+<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu6.png' alt='Comparison of the results between each input'>
 <span class='caption text-muted'>Figure 2: Comparison of the results between each input[^5]</span>
 
 For the street networks input, each street is classified as primary (highways connecting different districts), secondary (avenues connecting neighborhoods) or tertiary roads (capillaries that penetrate the neighborhood). Here, we can see that the best input is the CRHD street networks because thanks to the colors, the model is able to differentiate better between primary, secondary and tertiary roads. The land use map isn’t fitting as well as the street networks because of the GFA which made the model confusing.
 
 #### Experiment 2 : Tiles scaling
 In general the deep learning’s models’ resolution of the input and the output depends on the size of the hardware’s memory. On account of that, they had to convert the targeted area into 256x256 raster tiles into a slippy map to have smaller areas and so a better resolution. They tried with different levels of zoom : 14, 15, 16 and 17 and concluded that a higher zoom level could help the model to generate images with sharp footprints and nice graphics, close to reality. At level 17, the images were well detailed and precise but the model missed out contextual information and as a result of this, the footprints aren’t that accurate. Conversely the level 14 conducted to blurry roads and buildings because the density on each tile was too high. According to the authors, the zoom level 16 is, in general, the best option. Nevertheless the right zoom level depends more on the city itself. For example, a city such as Jakarta needs a 17 level because the street network is really dense but a city like Los Angeles it is not necessary and even confusing for the GANmapper which is looking for contextual information.
-<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu7.png' alt='The GANmapper model architecture'>
+<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu7.png' alt='Comparison between different zoom levels'>
 <span class='caption text-muted'>Figure 3: Comparison between different zoom levels[^6]</span>
 
 #### Experiment 3 : Testing GANmapper
 For this experimental phase, the researchers are testing the model in eight separate cities. They applied the same modalities for every city, namely zoom level 16, CRHD datasets and complete examples of ground truth. They realized that the general model was able to understand the urban textures of each city but was still struggling with large building footprints generation. On the other hand, it learns the road’s hierarchy and the appropriate road offsets. Moreover, the GANmapper understood the urban morphology for each city and was able to generate a building typology accurately.
-<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu8.png' alt='The GANmapper model architecture'>
+<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu8.png' alt='Synthetic results of GANmapper'>
 <span class='caption text-muted'>Figure 4: Synthetic results of GANmapper[^7]</span>
 
 #### Experiment 4 : Stitching tiles back
 Here we can see that the GANmapper executes the task really well since the tiles are making sense next to each other. It has a correct urban texture in terms of shape, orientation, density and building footprint’s areas and close to the ground truth.
-<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu10.png' alt='The GANmapper model architecture'>
+<img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu10.png' alt='Stitched output of Jakarta'>
 <span class='caption text-muted'>Figure 5: Stitched output of Jakarta[^8]</span>
 
 
