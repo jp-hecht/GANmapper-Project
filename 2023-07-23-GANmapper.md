@@ -28,7 +28,7 @@ Here, they are looking for the best pair input-output for the task. They begin t
 * Black and White street networks
 * Colored Road Hierarchy Diagrams street networks
 <img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu6.png' alt='Comparison of the results between each input'>
-<span class='caption text-muted'>Figure 2: Comparison of the results between each input[^5]</span>
+<span class='caption text-muted'>Figure 2: Comparison of the results between each input [^5]</span>
 
 For the street networks input, each street is classified as primary (highways connecting different districts), secondary (avenues connecting neighborhoods) or tertiary roads (capillaries that penetrate the neighborhood). Here, we can see that the best input is the CRHD street networks because thanks to the colors, the model is able to differentiate better between primary, secondary and tertiary roads. The land use map isn’t fitting as well as the street networks because of the GFA which made the model confusing.
 
