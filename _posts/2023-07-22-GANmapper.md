@@ -3,24 +3,43 @@ layout: post
 title: "GANmapper"
 subtitle: "The GANmapper project"
 date: 2023-07-23 10:45:11 -0400
-background: '/img/posts/ganmappervisu2.jpg'
+background: '/img/posts/Summary.jpg'
 author: Juliette Bouzard
 ---
 
-The GANMapper is a conditional GAN (if you want to learn more about GANs, you can read our last article : [Generative Adversarial Networks](https://jp-hecht.github.io/GANmapper-Project/2023/03/03/2023-07-07-lit-review.md)), issued by two researchers : Abraham Noah Wu a phD researcher at National University of Singapore who has a master degree in Architecture, studying new uses of urban data using deep learning and Filip Biljecki, an assistant professor at National University of Singapore who realized is phD degree in 3D GIS and Geomatic engineer.
+The GANMapper is a conditional GAN (if you want to learn more about GANs, you can read our last article : [Generative Adversarial Networks](https://jp-hecht.github.io/GANmapper-Project/2023/03/03/2023-07-07-lit-review.md)), issued by two researchers : Abraham Noah Wu a PhD researcher at National University of Singapore who has a master degree in Architecture, studying new uses of urban data using deep learning and Filip Biljecki, an assistant professor at National University of Singapore who realized his PhD degree in 3D GIS and Geomatic engineer.
+
+> article or post?
+>
+> are you really realizing your PhD degree -> i think your conducting your degree?
+>
+> is a header missing here?
 
 The two researchers start from the premise that few studies have been carried out involving GANs in the geographical sciences. For example, GANs are used to translate satellite images into cartographics representations or to generate realistic satellite images. That is why they decide to fill the gap by investigating if GANs can be applied in geospatial data. The main idea of this project is to use GANs to create new geospatial features on maps and to contribute to increase the completeness of data for geospatial datasets such as Open Street Map. Today, a lot of geospatial datasets like land use datasets, street networks or population data from each district, etc, are available at a worldwide level and for free but some features are still missing. In fact, they realized that important elements sometimes don’t appear on maps such as building footprints, 3D models and any type of point of interest. In the case of Open Street Map, the road network is generally complete and well detailed, but for building footprints, the data is heterogeneous and sometimes of poor quality. Therefore, the two researchers decided to base their study on building's footprint generation.
 
-As they explained in the paper, some AI techniques to generate building footprints already exist but the quality of the resolution depends on the scale of the images and the larger the scale, the poorer the resolution is. Those techniques are mostly used to enrich the existing data. Accordingly, they decided to create a model capable of generating building footprints by using GANs in a way that it can predict one spatial dataset from another. They call their model GANmapper and define it as a “Generator of spatial data on buildings footprints capable of creating realistic looking and hierarchically correct building footprints data from other related urban datasets such as street networks”[^1]. Given that, the footprints are completely made out of scratch and this is the most impressive of this work. Nevertheless, the authors specify that those buildings' footprints aren’t exactly the same as those in reality but really close and the goal is to represent the urban morphology as accurately as possible. On the other hand, the model is also very helpful for urban planners to understand the morphology of cities and design new ones by generating them with GANmapper. In the future, they will also try to generate other features with the same model.
+> maybe " main idea of this project" -> we should differentiate between our project and their paper?
+
+As they explained in the paper, some AI techniques to generate building footprints already exist but the quality of the resolution depends on the scale of the images and the larger the scale, the poorer the resolution is. Those techniques are mostly used to enrich the existing data. Accordingly, they decided to create a model capable of generating building footprints by using GANs in a way that it can predict one spatial dataset from another. They call their model GANmapper and define it as a 
+> “Generator of spatial data on buildings footprints capable of creating realistic looking and hierarchically correct building footprints data from other related urban datasets such as street networks”[^1].
+
+Given that, the footprints are completely made out of scratch and this is the most impressive of this work. Nevertheless, the authors specify that those buildings' footprints aren’t exactly the same as those in reality but really close and the goal is to represent the urban morphology as accurately as possible. On the other hand, the model is also very helpful for urban planners to understand the morphology of cities and design new ones by generating them with GANmapper. In the future, they will also try to generate other features with the same model.
+
+> AI -> longfrom and the artifical intel ...(AI)
 
 The GANmapper model is an image-to-image translation conditional GAN using an autoencoder with nine residual blocks. The general architecture is close to the pix2pix GAN. As an input, the researchers gave to the model the street networks dataset and some pictures also called target images of building polygons from Open Street Map. Only with that amount of information the model is able to learn the differences between buildings along little streets and those along highways and mostly thanks to the size of the streets and the information related to each kind of it. 
 <img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu5.1.png' alt='The GANmapper model architecture'>
 <span class='caption text-muted'>Figure 1: The GANmapper model architecture[^2]</span>
 
-To assess the accuracy of the urban morphology generated by GANmapper, the researchers are using two different metrics. The Frechet Inception Distance (FID), also known as the most commonly adapted benchmark for GAN performance, “assesses the quality of the image created by the generator by calculating the distance between the feature vectors of real and generated images that are computed.”[^3] The lower the FID score is, the better it is because this indicates that the feature vectors of real and generated images are similar. This means that the representations in terms of shape, size and density are close to reality.
-The second one is the Mean Intersection over Union (mIoU) which “measures the degree of overlap of the generated to the ground truth. Mathematically, mIoU measures the number of pixels common between the input and generated images divided by the total number of pixels present across both datasets.”[^4] In this case, a high mIoU score signifies that the generated images overlap with the input images, which means that the model manages to reproduce the right form. Later on, they realize that the mIoU wasn’t fitting for the GANmapper since the loss function measures the difference between real and fake based on visual similarity rather on pixel-wise similarity, which is what the mIoU is using.
+> i think i am also repeating this in my part -> can we do it like this??
+
+
+To assess the accuracy of the urban morphology generated by GANmapper, the researchers are using two different metrics. The Frechet Inception Distance (FID), also known as the most commonly adapted benchmark for GAN performance, “[...] assesses the quality of the image created by the generator by calculating the distance between the feature vectors of real and generated images that are computed.”[^3] The lower the FID score is, the better it is because this indicates that the feature vectors of real and generated images are similar. This means that the representations in terms of shape, size and density are close to reality.
+The second one is the Mean Intersection over Union (mIoU) which “[...] measures the degree of overlap of the generated to the ground truth. Mathematically, mIoU measures the number of pixels common between the input and generated images divided by the total number of pixels present across both datasets.”[^4] In this case, a high mIoU score signifies that the generated images overlap with the input images, which means that the model manages to reproduce the right form. Later on, they realize that the mIoU wasn’t fitting for the GANmapper since the loss function measures the difference between real and fake based on visual similarity rather on pixel-wise similarity, which is what the mIoU is using.
 
 However, to have a good result, the data needs to be pre and post-processed. To find the right elements and investigate the performance of GANmapper, the researchers conducted four experiments.
+
+
+> I you want to we can add the according formulas for FID and mIoU
 
 #### Experiment 1 : Input configuration 
 Here, they are looking for the best pair input-output for the task. They begin the experiment with three different types of input : 
@@ -28,7 +47,7 @@ Here, they are looking for the best pair input-output for the task. They begin t
 * Black and White street networks
 * Colored Road Hierarchy Diagrams street networks
 <img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu6.png' alt='Comparison of the results between each input'>
-<span class='caption text-muted'>Figure 2: Comparison of the results between each input [^5]</span>
+<span class='caption text-muted'>Figure 2: Comparison of the results between each input[^5]</span>
 
 For the street networks input, each street is classified as primary (highways connecting different districts), secondary (avenues connecting neighborhoods) or tertiary roads (capillaries that penetrate the neighborhood). Here, we can see that the best input is the CRHD street networks because thanks to the colors, the model is able to differentiate better between primary, secondary and tertiary roads. The land use map isn’t fitting as well as the street networks because of the GFA which made the model confusing.
 
@@ -46,6 +65,8 @@ For this experimental phase, the researchers are testing the model in eight sepa
 Here we can see that the GANmapper executes the task really well since the tiles are making sense next to each other. It has a correct urban texture in terms of shape, orientation, density and building footprint’s areas and close to the ground truth.
 <img class='img-fluid' src='/GANmapper-Project/img/posts/ganmappervisu10.png' alt='Stitched output of Jakarta'>
 <span class='caption text-muted'>Figure 5: Stitched output of Jakarta[^8]</span>
+
+> a first sentence is missing what they were doing
 
 
 In conclusion, the GANmapper is an efficient solution to create datasets that approximately reveal the urban morphology of a city. Nevertheless, it could be better as the authors explained in the paper. In fact, they still have to work on the scaling part and the choice of the zoom level. They also want to add some rules to the GANmapper to help it in the post-processing part to remove buildings from spaces where they shouldn’t be. At last, this experimentation is really impressive by showing the capacities of GANmapper but also very hopeful for future developments in the GIS field using GANs.
