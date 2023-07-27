@@ -21,7 +21,6 @@ The model architecture of GAN is based on a two steps learning process that isnâ
 <img class='img-fluid' src='/GANmapper-Project/img/posts/ganvisu2.png' alt='Learning step of GAN'>
 <span class='caption text-muted'>Figure 1: Learning step of GAN[^2]</span>
 
-> maybe you could simply adapt my style of citing copied images from a website -> simply with link (take a look in methods and results)
 
 Nevertheless, as the generator is training, the task becomes more and more difficult for the discriminator. Everytime it doesnâ€™t succeed in differentiate from real to fake ones, it has to upload his weight thanks to backpropagation
 
