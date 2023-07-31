@@ -42,7 +42,6 @@ For all those examples, a different kind of GAN, so GAN with different architect
 
 With conditional GAN it is possible to create a model such as image-super-resolution which is able to conceive the same image as in the data input but with a better quality or the text-to-image resolution, a model able to design a picture based on what the speaker describes in text as nightcafé, mid journey, etc. The one we will focus on in this study is the image-to-image translation which is usually the transformation of one picture to another with more features or different designs as they are used in the medical field to generate sample images. 
  
-
 ---
 ##### References : 
 * CNRS - Formation FIDLE, Seq.13 "Generative Adversarial Networks (GAN)", march 2023, https://www.youtube.com/watch?v=hvFthCbTl5c&t=2854s&ab_channel=CNRS-FormationFIDLE
