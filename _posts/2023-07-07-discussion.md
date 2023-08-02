@@ -45,6 +45,6 @@ Pixel distribution is a relevant factor that must be taken into account. It was 
 A lot of parameters are used in the source code, which are not particularly discussed in the article. There is no description of all the parameters used, so it is not easy to understand them. Some of the parameters can be identified by their names and used for the new model. We were able to test and adjust a few parameters. A short explanation of the parameters used would have been very desirable and would also have opened up more possibilities for editing. In the end, not all hyperparameters could be tested and were left at their default settings.  
 
 
-> please not say that we did not understood the model fully if you say so our whole work is obsolete
+> please don't say that we did not understood the model fully if you say so our whole work is obsolete
 
 Overall, the whole model was hardly changed, except for a few selected parameters, the input data and the output location. To achieve the best results, it would be better to understand the entire model completely in order to achieve the best results in the end.
