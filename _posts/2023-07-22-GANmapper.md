@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "GANmapper"
-subtitle: "The GANmapper project"
-date: 2023-07-23 10:45:11 -0400
-background: '/img/posts/hamburg1.jpg'
+subtitle: "The basics about it"
+date: 2023-08-01 7:45:20 -0400
+background: '/img/hamburg1.jpg'
 author: Juliette Bouzard
 ---
 

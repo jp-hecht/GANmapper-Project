@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Additional Ressources'
-subtitle: 'Some more tipps & tricks, which were created during the project'
-date: 2023-02-31 10:45:25 -0400
+subtitle: 'Some more tipps & tricks'
+date: 2023-07-30 9:45:20 -0400
 background: '/img/data_bw.jpg'
 author: Jonathan Hecht
 ---

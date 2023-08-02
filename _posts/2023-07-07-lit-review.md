@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Generative Adversarial Networks"
-subtitle: "What is a Generative Adversarial Networks or GAN ?"
-date: 2023-07-23 10:45:11 -0400
+subtitle: "What are Generative Adversarial Networks?"
+date: 2023-08-01 6  :45:20 -0400
 background: '/img/posts/ganillu.jpg'
 author: Juliette Bouzard
 ---
