@@ -50,6 +50,7 @@ With conditional GAN it is possible to create a model such as image-super-resolu
 * Mirza, M., & Osindero, S. (2014): Conditional generative adversarial nets.
 * Singh, Nripendra & Raza, Khalid. (2021): Medical Image Generation Using Generative Adversarial Networks: A Review.
 
+---
 
 [^1]: Goodfellow, I., Pouget-Abadie, J, Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., ... & Bengio, Y. (2020): Generative adversarial networks. Communications of the ACM, 63(11), 139-144.
 [^2]: Tensor flow, What are GANs ?, (https://www.tensorflow.org/tutorials/generative/dcgan?hl=en) 
