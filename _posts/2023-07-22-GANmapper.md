@@ -2,12 +2,12 @@
 layout: post
 title: "GANmapper"
 subtitle: "The basics about it"
-date: 2023-08-01 7:45:20 -0400
+date: 2023-08-01 6:45:20 -0400
 background: '/img/hamburg1.jpg'
 author: Juliette Bouzard
 ---
 
-The GANMapper is a conditional GAN (if you want to learn more about GANs, you can read our last post : [Generative Adversarial Networks](https://jp-hecht.github.io/GANmapper-Project/2023/03/03/2023-07-07-lit-review.md)), issued by two researchers : Abraham Noah Wu a PhD researcher at National University of Singapore who has a master degree in Architecture, studying new uses of urban data using deep learning and Filip Biljecki, an assistant professor at National University of Singapore who realized his PhD degree in 3D GIS and Geomatic engineer.
+The GANMapper is a conditional GAN (if you want to learn more about GANs, you can read our last post : [Generative Adversarial Networks](https://jp-hecht.github.io/GANmapper-Project/2023/08/01/lit-review.html)), issued by two researchers : Abraham Noah Wu a PhD researcher at National University of Singapore who has a master degree in Architecture, studying new uses of urban data using deep learning and Filip Biljecki, an assistant professor at National University of Singapore who realized his PhD degree in 3D GIS and Geomatic engineer.
 
 #### GANmapper's main idea 
 

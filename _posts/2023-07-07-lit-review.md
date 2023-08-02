@@ -2,7 +2,7 @@
 layout: post
 title: "Generative Adversarial Networks"
 subtitle: "What are Generative Adversarial Networks?"
-date: 2023-08-01 6  :45:20 -0400
+date: 2023-08-01 7:45:20 -0400
 background: '/img/posts/ganillu.jpg'
 author: Juliette Bouzard
 ---
