@@ -6,19 +6,8 @@ date: 2023-07-30 11:45:20 -0400
 background: '/img/hh3.jpg'
 author: Maria Riegel
 ---
-> Headings? Sections? Maybe not necessary
-> that also correspond to reality -> what do you mean with that?
-> computer computing time -> just computing time
-> not only limited time period -> also especially the necessary computing units are missing
-> Floor plans? -> building footprints?
-> We again
-> Very helpful -> not scientific 
-> zoom factor was described -> road network not 
-> every town -> do you mean the administrative units or distric
-> building ground plans?
-> it is not relevant if the understanding of the parameters is hard !
 
- The aim is to generate building footprints of other cities that are true to scale and angle and that also correspond to reality in terms of completeness and accuracy. So far, the planned goal has not been achieved. One reason may be insufficient training of the model with the data. If the model were trained with the new data over a longer period of time, it should be able to generate building footprints for cities with a lower population density than Singapore or Paris. The calculation of the model is also associated with a long computing time, which has made multiple training even more difficult for the limited time period. In particular, the necessary computational units are also lacking.
+The aim is to generate building footprints of other cities that are true to scale and angle and that also correspond to reality in terms of completeness and accuracy. So far, the planned goal has not been achieved. One reason may be insufficient training of the model with the data. If the model were trained with the new data over a longer period of time, it should be able to generate building footprints for cities with a lower population density than Singapore or Paris. The calculation of the model is also associated with a long computing time, which has made multiple training even more difficult for the limited time period. In particular, the necessary computational units are also lacking.
 >
 >
 We also reached its limits when generating the building footprints. There were limitations with the size of the tiles. The zoom factor cannot be freely selected, but depends on the morphology of the city. Another problem arose from the city's road network. It was unclear which streets we should or should not include in our street network map. By having too many streets in a large scale, it was difficult to distinguish the streets from each other. The larger the zoom factor, the more obvious it was to use fewer roads and rather use federal or motorway roads to ensure the clarity to assign the individual tiles. The smaller the zoom factor, the more suitable it was to use main and secondary roads from the 30 km zone.
@@ -36,9 +25,3 @@ A lot of parameters are used in the source code, which are not particularly disc
 >
 >
 Overall, the whole model was hardly changed, except for a few selected parameters, the input data and the output location. To achieve the best results, it would be better to change more parameters and test the new training data set again and again with new input parameters until the best results are achieved.
-
-
-
-> please don't say that we did not understood the model fully if you say so our whole work is obsolete
-
-Overall, the whole model was hardly changed, except for a few selected parameters, the input data and the output location. To achieve the best results, it would be better to understand the entire model completely in order to achieve the best results in the end.
